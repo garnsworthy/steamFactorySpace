@@ -1,0 +1,72 @@
+body  {
+    background: url(../imgs/background.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    margin: 0px;
+}
+
+.logo {
+  width: 35%;
+}
+
+.text {
+  color: #CDB8A3; /* matches color of logo */
+}
+
+.transparent95 {
+  opacity: 0.95;
+}
+
+.container {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.container.is-small-screen {
+  padding: 40px 28px;
+}
+
+.link {
+  color: #424242 !important;
+  display: block;
+  text-decoration: none;
+}
+
+.hidden {
+  opacity: 0;
+  display:none;
+}
+
+@keyframes fade-in {
+  from { opacity: 0;
+         height:0px }
+  to { opacity: 1;
+       height:auto; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1;
+         height:auto; }
+  to { opacity: 0;
+       height:0px; }
+}
+
+.mdl-component--active {
+  animation-name: fade-in;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  /*display: flex;*/
+  height:auto;
+}
+
+.mdl-component--inactive {
+  animation-name: fade-out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  /*display: none !important;*/
+  height:0px;
+}
